@@ -7,7 +7,13 @@ app = Flask(  # Create a flask app
     static_folder='static'  # Name of directory for static files
 )
 
-# Your code should be below
+@app.route('/')
+def my_shop():
+	return render_template("home.html")
+
+@app.route ('/product')
+def my_2_shop():
+	return render_template("product.html")
 
 
 
