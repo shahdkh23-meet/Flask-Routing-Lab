@@ -1,25 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+
+button {
+  background-color: #deeppink;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.container {
+  padding: 16px;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #pink;
+  padding-top: 50px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+  }
+}
+
+img {
+
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+    </style>
     <meta charset="UTF-8">
     <title>Cart</title>
 </head>
 <body>
-    <h1> welcome back guys</h1>
-
-    <form action="/lets_start">
-
-
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="username" name="username"><br><br>
-  <input type="submit and start" value="Submit and start ">
-
-</form>
-
-<input type="submit" value="Submit">
+    </form>
 <img  src="/static/ebey.jpeg">
+
+<button onclick="document.getElementById('th').style.display='block'">login</button>
+
+</div>
+<div id="th" class="modal">
+  <span onclick="document.getElementById('th').style.display='none'" 
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>login</h1>
+      <p>Please fill in this form to enter your account.</p>
+      <hr>
+      
+      <label for="psw"><b>username</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="psw-repeat" required>
+
+
+
+      </div>
+    </div>
+  </form>
+</div>
+    
+    
+
+      
+
  <script type="script.js"></script>
 </body>
 
