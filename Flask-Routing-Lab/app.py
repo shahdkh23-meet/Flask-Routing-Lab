@@ -12,15 +12,14 @@ def my_shop():
 	return render_template("home.html")
 
 @app.route ('/product')
-def my_2_shop():
+def my_product():
 	return render_template("product.html")
 
 
 @app.route ('/cart')
-def my_3_shop():
+def my_cart():
     return render_template("cart.html")
 
 
-
-if __name__ == "__main__":  # Makes sure this is the main process
+if __name__ == "__main__":  
     app.run(debug=True)
