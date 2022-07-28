@@ -67,6 +67,11 @@ hr {
   display: table;
 }
 
+  body{
+
+    text-align: center;
+  }
+
 
   }
 }
